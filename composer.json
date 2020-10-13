@@ -1,17 +1,16 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "strix-community/ui",
+    "description": "The frontend engine of Strix.",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "strix-community",
+        "ui"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/strix-community/ui",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "robertdrakedennis",
+            "email": "robertdennispersonal@gmail.com",
             "role": "Developer"
         }
     ],
@@ -19,21 +18,9 @@
         "php": "^7.4",
         "illuminate/contracts": "^8.0"
     },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.3",
-        "vimeo/psalm": "^3.11"
-    },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Strix-community\\Ui\\": "src",
         }
     },
     "scripts": {
@@ -48,10 +35,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Strix-community\\Ui\\UiServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Ui": "Strix-community\\Ui\\UiFacade"
             }
         }
     },
