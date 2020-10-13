@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Strix-community\\Ui\\": "src",
+            "Strix-community\\Ui\\": "src"
         }
     },
     "config": {
@@ -31,9 +31,6 @@
             "providers": [
                 "Strix-community\\Ui\\UiServiceProvider"
             ],
-            "aliases": {
-                "Ui": "Strix-community\\Ui\\UiFacade"
-            }
         }
     },
     "minimum-stability": "dev",
